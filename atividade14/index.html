@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 13</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<style type="text/css">
+.box{
+	background: linear-gradient(red,orange);
+	width: 300px;
+	height: 300px;
+	margin: 50px;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 5px #8888;
+}
+.box h1{
+	background: rgba(255,255,255,0.5);
+	text-shadow: 3px 3px 3px yellow;
+}
+
+
+    .figura{
+			background-image: linear-gradient(to bottom left,blue,green,yellow,pink,red);
+			width: 300px;
+			height: 300px;
+			margin: 50px;
+			box-sizing: border-box;
+			float: left;
+		}
+		.figura1{
+			background-image: radial-gradient(blue,yellow,orange);
+			width: 700px;
+			height: 150px;
+			margin: 50px;
+			box-sizing: border-box;
+			float: left;
+		}
+		.sombra1{
+			background-color: #ffb6c1;
+			width: 400px;
+			height: 150px;
+			margin: 50px;
+			position: relative;
+			float: left;
+		}
+		.sombra1:before, .sombra1:after{
+             content: "";
+             position: absolute;
+             z-index: -1;
+		}
+		.sombra1:before{
+			width: 35%;
+			height: 25%;
+			left: 15px;
+			bottom: 15px;
+			box-shadow: 0px 20px 10px #333;
+			transform: rotate(-5deg);
+		} 
+		.sombra1:after{
+			width: 35%;
+			height: 25%;
+			right: 15px;
+			bottom: 15px;
+			box-shadow: 0px 20px 10px #333;
+			transform: rotate(5deg);
+		} 
+		.sombra2{
+			background-color:#f5deb3;
+			width: 400px;
+			height: 150px;
+			margin: 50px;
+			position: relative;
+			float: left;
+		}
+		.sombra2:before, .sombra2:after{
+             content: "";
+             position: absolute;
+             z-index: -1;
+		}
+		.sombra2:before{
+			width: 35%;
+			height: 25%;
+			left: 10px;
+			bottom: 15px;
+			box-shadow: 0px 20px 10px #333;
+			transform: rotate(-5deg); 
+		}
+
+</style>
+</head>
+<body>
+<div class="box">
+
+<h1>Lorem Impsum</h1>
+<p>O governo federal chamou pelo menos 20 analistas de todo o país para trabalhar em parceria com a Polícia Civil do Rio de Janeiro. A ideia é tentar "sufocar" as atividades financeiras e a lavagem de dinheiro do crime organizado que atua no estado.</p>
+</div>
+
+<div class="figura">
+ 	
+ </div>
+ <div class="figura1">
+ 	
+ </div>
+ <div class="sombra1">
+ 	<h3>sombra 1</h3>
+ 	
+ </div>
+ <div class="sombra2">
+ 	<h3>sombra 2</h3>
+ 	
+
+</div>
+
+</body>
+</html>
