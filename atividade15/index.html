@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 15</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<style type="text/css">
+		@keyframes minhaAnimação{
+			form{
+				left: 10px;
+			}
+			to{
+				left: 50px;
+				background: blue;
+				border-radius: 100px;
+			}
+		}
+		.box{
+			position: relative;
+			left: 10px;
+			top: 10px;
+			width: 200px;
+			height: 200px;
+			background: red;
+			animation: minhaAnimação;
+			animation-duration: 5s;
+			animation-delay: 3s;
+			animation-iteration-count:3;
+			animation-direction:alternate;
+			animation: minhaAnimação 5s 3s 3 alternate;
+		}
+		.box:hover{
+			border: solid 5px black;
+			transition: border 3s 2s;
+		}
+	</style>
+</head>
+<body>
+	
+ <div class="box"></div>
+</body>
+</html>
