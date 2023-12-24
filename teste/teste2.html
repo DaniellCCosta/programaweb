@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campo de Busca em HTML</title>
+</head>
+<body>
+
+  <label for="search">Buscar:</label>
+  <input type="search" id="search" name="search" placeholder="Digite sua busca aqui">
+  <button onclick="buscar()">Buscar</button>
+
+  <script>
+    function buscar() {
+      var termoBusca = document.getElementById("search").value;
+      // Implemente a lógica de busca conforme necessário
+      alert("Buscando por: " + termoBusca);
+    }
+  </script>
+
+</body>
+</html>

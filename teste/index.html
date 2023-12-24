@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Situação Ativo/Inativo</title>
+  <style>
+    .ativo { color: green; }
+    .inativo { color: red; }
+  </style>
+</head>
+<body>
+<a href="teste1">teste1</a><br>
+<a href="teste2">teste2</a><br>
+  <p id="status" class="ativo">Ativo</p>
+  <button onclick="alternarStatus()">Alternar Status</button>
+
+  <script>
+    function alternarStatus() {
+      var statusElemento = document.getElementById("status");
+
+      if (statusElemento.classList.contains("ativo")) {
+        statusElemento.innerHTML = "Inativo";
+        statusElemento.classList.remove("ativo");
+        statusElemento.classList.add("inativo");
+      } else {
+        statusElemento.innerHTML = "Ativo";
+        statusElemento.classList.remove("inativo");
+        statusElemento.classList.add("ativo");
+      }
+    }
+  </script>
+
+</body>
+</html>

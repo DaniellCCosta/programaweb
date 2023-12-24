@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ações em HTML</title>
+</head>
+<body>
+
+  <h2>Item 1</h2>
+  <p>Descrição do item 1.</p>
+  <a href="#" onclick="verDetalhes()">Ver Detalhes</a>
+  <a href="#" onclick="editar()">Editar</a>
+  <a href="#" onclick="remover()">Remover</a>
+
+  <h2>Item 2</h2>
+  <p>Descrição do item 2.</p>
+  <a href="#" onclick="verDetalhes()">Ver Detalhes</a>
+  <a href="#" onclick="editar()">Editar</a>
+  <a href="#" onclick="remover()">Remover</a>
+
+  <script>
+    function verDetalhes() {
+      alert("Detalhes do item!");
+      // Implemente a lógica para exibir detalhes conforme necessário
+    }
+
+    function editar() {
+      alert("Editar item!");
+      // Implemente a lógica de edição conforme necessário
+    }
+
+    function remover() {
+      if (confirm("Tem certeza que deseja remover o item?")) {
+        // Implemente a lógica de remoção aqui
+        alert("Item removido!");
+      }
+    }
+  </script>
+
+</body>
+</html>
